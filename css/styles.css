@@ -1,0 +1,274 @@
+
+
+
+/* Global Styles */
+:root {
+	--primary-color: #e50914;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+
+/*FOOTER */
+.footer {
+	max-width: 70%;
+	margin: 1rem auto;
+    overflow: auto;
+    
+}
+
+.footer,
+.footer a {
+	color: #999;
+	font-size: 0.9rem;
+}
+
+.footer p {
+	margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.footer li {
+	line-height: 1.9;
+}
+
+.footer .lang-select {
+	margin-top: 2rem;
+	color: #999;
+	background-color: #000;
+	background-image: none;
+	border: 1px solid #333;
+	padding: 1rem 1.2rem;
+	border-radius: 5px;
+}
+section #form {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+input {
+    border: 1px solid rgb(220, 219, 235);
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 10px;
+    color: #000;
+    transition: all .15s ease-in;
+    
+}
+
+input[type=email] {
+    width: 60%;
+    height: 42px;
+    margin-bottom: 0px
+}
+
+input[type=submit] {
+    background-color: #e50914;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+input[type=submit]:focus {
+    border: 1px solid #fff;
+}
+
+input:focus {
+    border-color: #e50914;
+    box-shadow: 0px 0px 8px 2px #e50914;
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+/*END OF FOOTER */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #141414;
+  }
+  
+  img {
+    display: block;
+  }
+  h1, h2, p {
+    margin: 0;
+    
+    
+  }
+  a {
+    display: block;
+  }
+  .button {
+    background-color: #e50914;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+    padding: 8px 18px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    
+  }
+  .button:hover{
+    text-decoration: none;
+    color: #000;
+  }
+
+  .option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 91px;
+    width: 460px;
+    color: #FFF;
+    padding: 40px 0;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .option:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+  
+  .option svg {
+    margin-bottom: 5px;
+    fill: #FFF;
+  }
+  .option p {
+    font-weight: 600;
+  }
+  /* ================= */
+  /* SECTION MAIN LANDING */
+  #main-landing {
+    background-image: url('http://s3-us-west-2.amazonaws.com/techvibes/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg');
+    padding: 20px 40px;
+    position: relative;
+  }
+  
+  #main-landing > header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+  
+  /* HEADER */
+  /* logo */
+  #brand svg {
+    width: 180px;
+    height: auto;
+  }
+  
+  /* MAIN LANDING MESSAGE */
+  /* black gradient overlay */
+  #black-ov {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,#000000de, #00000029);
+    left: 0;
+    top: 0;
+  }
+  #main-landing-message {
+    position: relative;
+    padding: 18em 0;
+  }
+  #main-landing-message h1, h2 {
+    color: #FFF;
+  }
+  #main-landing-message > h1 {
+    font-size: 6em;
+    margin-bottom: 15px;;
+  }
+  #main-landing-message > h2 {
+    font-weight: 300;
+    margin-bottom: 1em;
+  }
+  #main-landing-message > a {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 26px;
+    letter-spacing: 1px;
+  }
+  #option-select-view {
+    background: #000;
+    position: relative;
+    
+  }
+  /* SELECT OPTIONS */
+  #option-select-clickable-options {
+    background-color: #141414;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10em;
+    border-bottom: 2px solid #2d2d2d;
+  }
+  
+  #myVideo {
+      position: relative;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+  }
+  .content {
+    position: absolute;
+    top: 23px;
+    width: 50%;
+    padding: 20px;
+  }
+
+  @media (min-width: 1199.98px) {
+    #myVideo {
+        position: center;
+        
+        max-width: 1100px;
+        max-height: 600px;
+    }
+    .content {
+        position: absolute;
+        top: 23px;
+        width: 50%;
+        padding: 20px;
+      }
+  }
+
+  /* VIEW OPTIONS */
+  
+  .view-option > div > a {
+    display: inline-block;
+    font-size: 15px;
+    padding: 12px 26px;
+    letter-spacing: 1px;
+  }
+
+  .view-option a {
+    padding: 16px 30px !important;
+    min-width: 268.5px;
+    min-height: 49px;
+    max-height: 49px;
+  }
+  .view-option:nth-child(1) > div:nth-child(1) {
+    margin-top: 4em;
+  }
+  .view-option > div > h1 {
+    color: #FFF;
+    font-weight: 300;
+  }
+  .view-option:nth-child(1) > div > h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+  .view-option > div > p {
+    color: #FFF;
+    display: flex;
+    text-align: left;
+  }
