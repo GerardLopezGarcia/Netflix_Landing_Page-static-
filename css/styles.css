@@ -157,6 +157,7 @@ body {
     padding: 20px 40px;
     position: relative;
     background-repeat: no-repeat;
+    background-size: cover;
   }
   
   #main-landing > header {
